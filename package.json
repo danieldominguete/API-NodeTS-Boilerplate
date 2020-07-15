@@ -1,0 +1,9 @@
+{
+  "name": "API-NodeTS-Boilerplate",
+  "version": "1.0.0",
+  "description": "API Rest Boilerplate",
+  "main": "index.js",
+  "repository": "https://github.com/danieldominguete/API-NodeTS-Boilerplate.git",
+  "author": "Daniel Dominguete <daniel.dominguete@gmail.com>",
+  "license": "MIT"
+}
