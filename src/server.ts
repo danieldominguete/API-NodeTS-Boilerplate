@@ -3,7 +3,7 @@ import App from './app'
 import jconfig from 'config'
 import { config } from 'dotenv'
 import * as path from 'path'
-import { Logger } from './logger/logger'
+import logger from './logger/logger'
 
 // env variables
 const ENV_FILE = path.join(__dirname, '..', '.env')
@@ -18,8 +18,6 @@ if (jconfig.has('server.port')) {
 App.set('port', port)
 const server = http.createServer(App)
 server.listen(port)
-
-const logger = new Logger()
 
 server.on('listening', function (): void {
   const addr = server.address()
